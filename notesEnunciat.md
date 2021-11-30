@@ -2,6 +2,13 @@
 
 Donat el següent document XML, crea un fitxer DTD per tal de compartir la informació de tots els sistemes informàtics de la Conselleria d'Educació, Cultura i Esports.
 
+## Criteris de correcció:
+- Crear tots els elements necessaris (2 punts)
+- Crear tots els atributs necessaris (2 punts)
+- Crear els atributs que puguen ser del tipus enumerable, és a dir, si sols poden ser certs valors (1 punts)
+- Configurar atributs obligatoris i opcionals (1) 
+- Configurar correctament el número d'elements que podem trobar dins de cada element pare (modificadors) (4)
+  
     <?xml version="1.0" encoding="UTF-8" ?>
 
     <!DOCTYPE notas SYSTEM "notes.dtd">
