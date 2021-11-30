@@ -39,93 +39,86 @@
 <p>Donat el següent document XML, crea un fitxer DTD per tal de compartir la informació de tots els sistemes informàtics de la Conselleria d'Educació, Cultura i Esports.</p>
 <h2 id="criteris-de-correcció">Criteris de correcció:</h2>
 <ul>
-<li>
-<p>Crear tots els elements necessaris (2 punts)</p>
-</li>
-<li>
-<p>Crear tots els atributs necessaris (2 punts)</p>
-</li>
-<li>
-<p>Crear els atributs que puguen ser del tipus enumerable, és a dir, si sols poden ser certs valors (1 punts)</p>
-</li>
-<li>
-<p>Configurar atributs obligatoris i opcionals (1)</p>
-</li>
-<li>
-<p>Configurar correctament el número d'elements que podem trobar dins de cada element pare (modificadors) (4)</p>
-  <?xml version="1.0" encoding="UTF-8" ?>
-  <!DOCTYPE notas SYSTEM "notes.dtd">
-  <notas>
-      <alumno convocatoria="Septiembre">
-          <nombre>Carlos</nombre>
-          <apellidos>Amaya Arozamena</apellidos>
-          <nif>56534432X</nif>
-          <matricula>m019843</matricula>
-          <cuestionarios>8.0</cuestionarios>
-          <tareas>8.0</tareas>
-          <examen>6.0</examen>
-          <final>8.0</final>
-      </alumno>
-      <alumno convocatoria="Junio">
-          <nombre>Jose</nombre>
-          <apellidos>Muñoz Soto</apellidos>
-          <nif>2222123123X</nif>
-          <matricula num_matriculaciones="2">m019872</matricula>
-          <faltas_justificadas>4</faltas_justificadas>
-          <problemas_personales>
-              <problema tipo="físico">Se desplaza en silla de ruedas</problema>
-          </problemas_personales>
-          <cuestionarios>7.0</cuestionarios>
-          <tareas fuera_de_plazo="2">9.0</tareas>
-          <examen>7.0</examen>
-          <final>8.5</final>
-          <observaciones>Trabaja mucho</observaciones>
-      </alumno>
-      <alumno convocatoria="Junio">
-          <nombre>Ana</nombre>
-          <apellidos>Martinez de la Fuente</apellidos>
-          <matricula>m097215</matricula>
-          <cuestionarios>8.0</cuestionarios>
-          <tareas>9.0</tareas>
-          <examen>9.0</examen>
-          <final>8.5</final>
-      </alumno>
-      <alumno convocatoria="Septiembre">
-          <nombre>Roberto</nombre>
-          <apellidos>Carrera Fernández</apellidos>
-          <matricula>m059312</matricula>
-          <faltas_injustificadas>20</faltas_injustificadas>
-          <cuestionarios>6.0</cuestionarios>
-          <tareas>7.0</tareas>
-          <examen>6.0</examen>
-          <final>6.5</final>
-      </alumno>
-      <alumno convocatoria="Septiembre">
-          <nombre>Concepción</nombre>
-          <apellidos>Lalinde Priego</apellidos>
-          <nie>202211X</nie>
-          <matricula>m034093</matricula>
-          <cuestionarios>4.0</cuestionarios>
-          <tareas>3.0</tareas>
-          <examen>2.0</examen>
-          <final>3.0</final>
-      </alumno>
-      <alumno convocatoria="Junio">
-          <nombre>Esther</nombre>
-          <apellidos>Pereda</apellidos>
-          <matricula>m938762</matricula>
-          <problemas_personales>
-              <problema tipo="laboral">Trabaja 8h/dia</problema>
-              <problema tipo="personal">Tiene 3 hijos</problema>
-          </problemas_personales>
-          <cuestionarios>2.0</cuestionarios>
-          <tareas>3.0</tareas>
-          <examen>2.0</examen>
-          <final>2.5</final>
-      </alumno>
-  </notas>
-</li>
+<li>Crear tots els elements necessaris (2 punts)</li>
+<li>Crear tots els atributs necessaris (2 punts)</li>
+<li>Crear els atributs que puguen ser del tipus enumerable, és a dir, si sols poden ser certs valors (1 punts)</li>
+<li>Configurar atributs obligatoris i opcionals (1)</li>
+<li>Configurar correctament el número d'elements que podem trobar dins de cada element pare (modificadors) (4)</li>
 </ul>
+<h2 id="document-xml">Document XML</h2>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;!DOCTYPE notas SYSTEM &quot;notes.dtd&quot;&gt;
+&lt;notas&gt;
+    &lt;alumno convocatoria=&quot;Septiembre&quot;&gt;
+        &lt;nombre&gt;Carlos&lt;/nombre&gt;
+        &lt;apellidos&gt;Amaya Arozamena&lt;/apellidos&gt;
+        &lt;nif&gt;56534432X&lt;/nif&gt;
+        &lt;matricula&gt;m019843&lt;/matricula&gt;
+        &lt;cuestionarios&gt;8.0&lt;/cuestionarios&gt;
+        &lt;tareas&gt;8.0&lt;/tareas&gt;
+        &lt;examen&gt;6.0&lt;/examen&gt;
+        &lt;final&gt;8.0&lt;/final&gt;
+    &lt;/alumno&gt;
+    &lt;alumno convocatoria=&quot;Junio&quot;&gt;
+        &lt;nombre&gt;Jose&lt;/nombre&gt;
+        &lt;apellidos&gt;Muñoz Soto&lt;/apellidos&gt;
+        &lt;nif&gt;2222123123X&lt;/nif&gt;
+        &lt;matricula num_matriculaciones=&quot;2&quot;&gt;m019872&lt;/matricula&gt;
+        &lt;faltas_justificadas&gt;4&lt;/faltas_justificadas&gt;
+        &lt;problemas_personales&gt;
+            &lt;problema tipo=&quot;físico&quot;&gt;Se desplaza en silla de ruedas&lt;/problema&gt;
+        &lt;/problemas_personales&gt;
+        &lt;cuestionarios&gt;7.0&lt;/cuestionarios&gt;
+        &lt;tareas fuera_de_plazo=&quot;2&quot;&gt;9.0&lt;/tareas&gt;
+        &lt;examen&gt;7.0&lt;/examen&gt;
+        &lt;final&gt;8.5&lt;/final&gt;
+        &lt;observaciones&gt;Trabaja mucho&lt;/observaciones&gt;
+    &lt;/alumno&gt;
+    &lt;alumno convocatoria=&quot;Junio&quot;&gt;
+        &lt;nombre&gt;Ana&lt;/nombre&gt;
+        &lt;apellidos&gt;Martinez de la Fuente&lt;/apellidos&gt;
+        &lt;matricula&gt;m097215&lt;/matricula&gt;
+        &lt;cuestionarios&gt;8.0&lt;/cuestionarios&gt;
+        &lt;tareas&gt;9.0&lt;/tareas&gt;
+        &lt;examen&gt;9.0&lt;/examen&gt;
+        &lt;final&gt;8.5&lt;/final&gt;
+    &lt;/alumno&gt;
+    &lt;alumno convocatoria=&quot;Septiembre&quot;&gt;
+        &lt;nombre&gt;Roberto&lt;/nombre&gt;
+        &lt;apellidos&gt;Carrera Fernández&lt;/apellidos&gt;
+        &lt;matricula&gt;m059312&lt;/matricula&gt;
+        &lt;faltas_injustificadas&gt;20&lt;/faltas_injustificadas&gt;
+        &lt;cuestionarios&gt;6.0&lt;/cuestionarios&gt;
+        &lt;tareas&gt;7.0&lt;/tareas&gt;
+        &lt;examen&gt;6.0&lt;/examen&gt;
+        &lt;final&gt;6.5&lt;/final&gt;
+    &lt;/alumno&gt;
+    &lt;alumno convocatoria=&quot;Septiembre&quot;&gt;
+        &lt;nombre&gt;Concepción&lt;/nombre&gt;
+        &lt;apellidos&gt;Lalinde Priego&lt;/apellidos&gt;
+        &lt;nie&gt;202211X&lt;/nie&gt;
+        &lt;matricula&gt;m034093&lt;/matricula&gt;
+        &lt;cuestionarios&gt;4.0&lt;/cuestionarios&gt;
+        &lt;tareas&gt;3.0&lt;/tareas&gt;
+        &lt;examen&gt;2.0&lt;/examen&gt;
+        &lt;final&gt;3.0&lt;/final&gt;
+    &lt;/alumno&gt;
+    &lt;alumno convocatoria=&quot;Junio&quot;&gt;
+        &lt;nombre&gt;Esther&lt;/nombre&gt;
+        &lt;apellidos&gt;Pereda&lt;/apellidos&gt;
+        &lt;matricula&gt;m938762&lt;/matricula&gt;
+        &lt;problemas_personales&gt;
+            &lt;problema tipo=&quot;laboral&quot;&gt;Trabaja 8h/dia&lt;/problema&gt;
+            &lt;problema tipo=&quot;personal&quot;&gt;Tiene 3 hijos&lt;/problema&gt;
+        &lt;/problemas_personales&gt;
+        &lt;cuestionarios&gt;2.0&lt;/cuestionarios&gt;
+        &lt;tareas&gt;3.0&lt;/tareas&gt;
+        &lt;examen&gt;2.0&lt;/examen&gt;
+        &lt;final&gt;2.5&lt;/final&gt;
+    &lt;/alumno&gt;
+&lt;/notas&gt;
+</code></pre>
 
     </body>
     </html>

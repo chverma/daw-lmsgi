@@ -8,7 +8,8 @@ Donat el següent document XML, crea un fitxer DTD per tal de compartir la infor
 - Crear els atributs que puguen ser del tipus enumerable, és a dir, si sols poden ser certs valors (1 punts)
 - Configurar atributs obligatoris i opcionals (1) 
 - Configurar correctament el número d'elements que podem trobar dins de cada element pare (modificadors) (4)
-  
+
+## Document XML
     <?xml version="1.0" encoding="UTF-8" ?>
 
     <!DOCTYPE notas SYSTEM "notes.dtd">
