@@ -10,6 +10,9 @@ Donat el següent document XML, crea un fitxer DTD per tal de compartir la infor
 - Configurar correctament el número d'elements que podem trobar dins de cada element pare (modificadors) (4)
 
 ## Document XML
+[Punxa ací per descarregar el fitxer XML](notes.xml)
+
+[Punxa ací per descarregar la plantilla DTD](notes.dtd)
     <?xml version="1.0" encoding="UTF-8" ?>
 
     <!DOCTYPE notas SYSTEM "notes.dtd">
